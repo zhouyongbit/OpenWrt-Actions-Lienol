@@ -93,11 +93,11 @@ jobs:
         echo -e "$(nproc) thread compile"
         make -j$(nproc)
 
-#    - name: 多线程编译失败，尝试单线程编译
-#      if: failure()
-#      run: |
-#        cd openwrt
-#        make -j1 V=s
+    - name: 多线程编译失败，尝试单线程编译
+      if: failure()
+      run: |
+        cd openwrt
+        make -j1 V=s
 
 #    - name: 上传BIN目录
 #      uses: actions/upload-artifact@master
