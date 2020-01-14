@@ -140,7 +140,6 @@ EOF
 
 # 常用LuCI插件选择:
 cat >> .config <<EOF
-CONFIG_PACKAGE_autocore=y #CPU信息显示
 # CONFIG_PACKAGE_luci-app-pppoe-relay is not set #PPPoE穿透
 # CONFIG_PACKAGE_luci-app-pppoe-server is not set #PPPoE服务器
 # CONFIG_PACKAGE_luci-app-trojan-server is not set #Trojan服务器
@@ -194,6 +193,11 @@ CONFIG_PACKAGE_nano=y
 # CONFIG_PACKAGE_tree=y
 # CONFIG_PACKAGE_vim-fuller=y
 CONFIG_PACKAGE_wget=y
+EOF
+
+# 其他软件包:
+cat >> .config <<EOF
+CONFIG_PACKAGE_autocore=y
 EOF
 
 # 
