@@ -185,7 +185,8 @@ cat >> .config <<EOF
 CONFIG_PACKAGE_luci-theme-darkmatter=y
 CONFIG_PACKAGE_luci-theme-bootstrap-mod=y
 CONFIG_PACKAGE_luci-theme-netgear-mc=y
-CONFIG_PACKAGE_luci-theme-argon-mod=y
+CONFIG_PACKAGE_luci-theme-argon-dark-mod=y
+CONFIG_PACKAGE_luci-theme-argon-light-mod=y
 EOF
 
 # 常用软件包:
