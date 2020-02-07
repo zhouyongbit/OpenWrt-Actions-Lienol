@@ -86,9 +86,9 @@ jobs:
         ../$DIY_SH
         make defconfig
 
-#      开启SSH远程连接
-#    - name: SSH connection to Actions
-#      uses: P3TERX/debugger-action@master
+    - name: 开启SSH远程连接
+      uses: P3TERX/debugger-action@master
+      if: env.SSH_ACTIONS == 'true'
 
     - name: 下载软件包
       id: package
@@ -123,6 +123,7 @@ jobs:
 
     - name: 上传固件
       uses: actions/upload-artifact@master
+      if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
         name: OpenWrt_firmware
         path: ./artifact/
