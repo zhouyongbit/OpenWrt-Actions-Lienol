@@ -126,6 +126,7 @@ CONFIG_PACKAGE_kcptun-client=y
 CONFIG_PACKAGE_haproxy=y
 CONFIG_PACKAGE_chinadns-ng=y
 CONFIG_PACKAGE_v2ray=y
+CONFIG_PACKAGE_v2ray-plugin=y
 CONFIG_PACKAGE_trojan=y
 CONFIG_PACKAGE_brook=y
 CONFIG_PACKAGE_ipt2socks=y
