@@ -14,7 +14,7 @@ sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
 git clone https://github.com/kang-mk/luci-app-smartinfo package/luci-app-smartinfo
 
-#创建自定义配置文件 - OpenWrt-x86-64
+# 创建自定义配置文件 - OpenWrt-x86-64
 
 rm -f ./.config*
 touch ./.config
